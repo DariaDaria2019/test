@@ -1,0 +1,655 @@
+html {
+	box-sizing:border-box;
+
+	}
+*,*::before,*::after {
+	box-sizing:inherit;
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 1024px) { 
+
+img {
+	width: 100%;
+}
+
+#image-8 {
+	margin: 25px 47px 86px 47px;
+	display: grid;
+	grid-template-columns:repeat(6, 106.5px); 
+	grid-template-rows: repeat(8, 110.2px); 
+	grid-gap: 6px;
+	justify-content: center;
+
+}
+
+#small1 {
+grid-row: 1/2;
+grid-column: 1/2;
+}
+
+#small2 {
+grid-row: 3/4;
+grid-column: 1/2;
+}
+
+#small3 {
+grid-row: 5/6;
+grid-column: 1/2;
+}
+
+
+#big1 {
+grid-row: 1/4;
+grid-column: 2/5;
+}
+
+#big2 {
+grid-row: 5/8;
+grid-column: 2/5;
+}
+
+#small4 {
+grid-row: 4/5;
+grid-column: 2/3;
+}
+
+#small5 {
+grid-row: 4/5;
+grid-column: 4/5;
+}
+
+#small6 {
+grid-row: 1/2;
+grid-column: 5/6;
+}
+
+#small7 {
+grid-row: 3/4;
+grid-column: 5/6;
+}
+
+#small8 {
+grid-row: 5/6;
+grid-column: 5/6;
+}
+
+
+
+#img-2  img{
+
+	width: 335px;
+	height: 264px;
+	z-index: 3;
+
+}
+
+/*фото нои*/
+#img-3  img{
+
+	width: 361px;
+	height: 248px;
+	z-index: 2;
+}
+
+/*фото одежда*/
+#img-4 img {
+
+	width: 448px;
+	height: 256px;
+	z-index: 1;
+}
+
+
+
+}
+
+
+body{
+font-family: 'Roboto', sans-serif;
+background: #FFFFFF;
+} 
+
+header {
+max-width: 1440px;
+height: 120px;
+background: #F9FAFC;
+padding-top: ;
+}
+
+a {
+text-decoration: none;
+}
+
+ul {
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;
+align-items: center;
+list-style-type: none;
+}
+
+.ham {
+	visibility: hidden;
+}
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#000;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+/*заголовки разделов*/
+.H2 {
+	display: flex;
+	justify-content: center;
+	line-height: 56px;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+/*меню и его элементы*/
+.navigation {
+	max-width: 1440px;
+	display: inline-flex;
+	align-items: center;
+
+}
+
+
+.logo img{
+	color: #333333;
+	padding-right: 77px;
+	margin-left: -30px;
+	text-decoration: line-through;
+
+}
+
+.line-through {
+position: absolute;
+left: 2px;
+top: 2px;
+}
+
+/*список элементов меню*/
+.nav {
+	width: 569px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+}
+
+/*значек лупа*/
+.search {
+	color: #333333;
+	font-size: 27px;
+	padding: 47px;
+}
+
+
+.header i{
+justify-content: flex-end;
+}
+
+/*заголовки и элементы меню*/
+.H2,
+.nav li{
+	text-transform: uppercase;
+}
+
+ /*отступы в меню */
+.nav-list {
+	font-size: 14px;
+	color: #333333;
+	padding-right: 79px;
+}
+
+.nav-list:last-child {
+	padding-right: 0;
+}
+
+/*раздел Стиль и модная экипировка*/
+.stylesh {
+	max-width: 1440px;
+	min-height: 720px;
+}
+
+.block1 {
+	margin-top: 64px;
+}
+
+	/*декоративные элементы-зеленые линии*/
+/*.green-line img{
+	position: relative;
+	margin-top: 24px;
+
+}
+/*.line-1 {
+	width: 450px;
+	height: 448px;
+	position: absolute;
+	top: -78px;
+	left: -121px;
+	border-bottom: 10px solid #E2FA1D;
+	transform: rotate(180deg);
+
+}*/
+
+
+
+
+	/*текст-описание после заголовка Н2*/
+.text-discription {
+	margin: auto;
+	font-size: 16px;
+	line-height: 24px;
+	color: #797979;
+	width: 674px;
+	height: 48px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	text-align: center;
+	padding: 0 55px 0 55px ;
+}
+
+.image-8 {
+	margin: 25px 47px 86px 47px;
+	display: grid;
+	grid-template-columns:repeat(12, 106.5px); 
+	grid-template-rows: repeat(4, 110.2px); 
+	grid-gap: 6px;
+}
+
+/*изображение ромб маленькое*/
+.img-small img{
+	width: 212.5px;
+	height: 212.5px;
+	display:flex;
+	clip-path: polygon(106px 0, 212.5px 106px, 106px 212.5px, 0 106px );
+	
+}
+
+.img-big img {
+	width: 440.59px;
+	height: 440.59px;
+	display: flex;
+	clip-path: polygon(220.3px 0, 440.6px 220.3px, 220.3px 440.6px, 0 220.3px);
+}
+
+.small1 {
+grid-row: 2/3;
+grid-column: 1/2;
+}
+
+.small2 {
+grid-row: 1/2;
+grid-column: 2/3;
+}
+
+.small3 {
+grid-row: 3/4;
+grid-column: 2/3;
+}
+
+
+.big1 {
+grid-row: 1/4;
+grid-column: 3/6;
+}
+
+.big2 {
+grid-row: 1/4;
+grid-column: 7/10;
+}
+
+.small4 {
+grid-row: 1/2;
+grid-column: 6/7;
+}
+
+.small5 {
+grid-row: 3/4;
+grid-column: 6/7;
+}
+
+.small6 {
+grid-row: 1/2;
+grid-column: 10/11;
+}
+
+.small7 {
+grid-row: 3/4;
+grid-column: 10/11;
+}
+
+.small8 {
+grid-row: 2/3;
+grid-column: 11/12;
+}
+
+/*раздел об Superdupe*/
+.about {
+	max-height: 1720px;
+	background: #F9FAFC;
+	
+	display: inline-flex;
+	
+}
+
+/*декор линии серые фон*/
+.about svg {
+	max-height: 1720px;
+	position: absolute;
+	z-index: 1;
+}
+
+/*блок с контентом раздела об Superdupe*/
+.block2 {
+	padding-top: 88px;
+	
+}
+
+/* изображения раздела об Superdupe*/
+.image-block2 {
+	
+	margin-left: auto;
+	margin-right: auto; 
+	max-width: 897px;
+	max-height: 480px;
+}
+
+/*блок с текстом из двух колонок*/
+.grid {
+	margin-left: 19%;
+	margin-right: 19%;
+	margin-top: 40px;
+	margin-bottom: 64px;
+	color: #333333;
+
+}
+
+/*разделение текста на две колонки*/
+.column {
+	column-width: 1fr 1fr;
+	column-count: 2;
+	column-gap: 41px;
+
+}
+
+/*заголовок в блоке grid*/
+.H3 {
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
+	padding-bottom: 16px;
+}
+
+/*текст в блоке grid**/
+.text {
+	font-size: 18px;
+	line-height: 24px;
+
+}
+
+/*раздел Наша команда*/
+.team {
+	max-width: 1440px;
+	height: 728px;
+	background: #E2FA1D;
+
+}
+
+/* блок с контентом раздела team*/
+.block3 {
+	display: flex;
+
+
+}
+
+/*вертикальный заголовок */
+.H2-vertical {
+	width: 56px;
+	height: 728px;
+	writing-mode: vertical-rl;
+	transform: rotate(180deg);
+	margin-left: 36px;
+	justify-content: center;
+
+
+}
+
+/*фото девушка*/
+ .img-2 {
+ 	/*position: relative;
+ 	top: 14%;
+ 	left: 11%;*/
+ 	justify-content: flex-start;
+ 	margin-top: 88px;
+ 	margin-left: 68px;
+	max-width: 447px;
+	max-height: 352px;
+	z-index: 3;
+
+}
+
+/*фото нои*/
+.img-3 {
+	/*position: relative;
+	top:  37%;
+	left: 26.6%;*/
+	margin-top: 256px;
+	margin-left: -223px;
+	max-width: 559px;
+	max-height: 384px;
+	z-index: 2;
+}
+
+/*фото одежда*/
+.img-4 {
+	/*position: relative;
+	top:  21%;
+	left: 50%;*/
+	margin-top: 144px;
+	margin-left: -223px;
+	max-width: 672px;
+	max-height: 384px;
+	z-index: 1;
+}
+
+/*раздел Отзывы*/
+.feedback {
+	height: 763px;
+	background: #F9FAFC;
+
+}
+
+/*блок раздела feedback */
+.block4 {
+	display: flex;
+	padding-top: 88px;
+	margin-left: 48px;
+	margin-bottom: 32px;
+
+}
+
+/*заголовок раздела feedback */
+.H2-left p{
+	max-width: 671px;
+	height: 56px;
+	justify-content: flex-start;
+	margin-right: 448px;
+}
+
+/*блок переключатель л/пр*/
+.peginator {
+	margin-right: 47px;
+	border: 1px solid #BDBDBD;
+	box-sizing: border-box;
+	border-radius: 5px;
+	justify-content: flex-end;
+}
+
+/*копка блока peginator*/
+.btn {
+
+	max-width: 226px;
+	height: 52px;
+}
+
+/*параметры кнопки и текста*/
+.btn li{
+	width: 113px;
+	align-items: center;
+	text-align: center;
+	color: #333333;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+/*параметры стрелок кнопки*/
+.btn i {
+	padding-right: 15px;
+	padding-left: 15px;
+	color: #BDBDBD;
+
+}
+
+/*расположение эл. правой части кнопки*/
+.btn-right  {
+	display: flex;
+	justify-content: flex-end;
+	border-left: 1px solid #BDBDBD;
+}
+
+/*расположение эл. left части кнопки*/
+.btn-left  {
+	display: flex;
+	justify-content: flex-start;
+}
+
+/*блок с отзывами*/
+.feed-list {
+	display: inline-flex;
+	margin-bottom: 83px;
+	max-width: 1440px;
+}
+
+/*отдельный отзыв*/
+.infa {
+
+	width: 640px;
+	margin-left: 48px;
+}
+
+/* расположение номера и фи*/
+.infa-block {
+	display: flex;
+}
+
+/*фи отзыва*/
+.fio {
+	margin-bottom: 40px; 
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
+	color: #333333;
+}
+
+/*порядковый номер отзыва*/
+.number {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+	text-transform: uppercase;
+	color: #838383;
+	margin-right: 16px;
+}
+
+/*блок текста и фото с отзывом*/
+.feed-text {
+	background-color: #FFFFFF;
+	margin-left: 24px;
+}
+
+/*фото отзыва*/
+.circle {
+	float: left;
+	shape-outside: circle(50%);
+	width: 160px;
+	height: 160px;
+ 
+}
+
+/*текст озыва*/
+.txt {
+	text-align: right;
+	padding-right: 24px;
+
+}
+
+/*подвал*/
+footer {
+display: flex;
+align-items: center;
+background: #E2FA1D;
+height: 120px;
+}
+
+/*иконки*/
+.icons i{
+justify-content: flex-end;
+color: #333333;
+margin-left: 32px;
+}
+
+.line-down {
+	display: flex;
+/*position: absolute;
+left: -47px;
+top: 2px;*/
+}
+
+.footer img{
+	display: flex;
+	margin-left: 47px;
+	
+}

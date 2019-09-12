@@ -101,9 +101,108 @@ grid-column: 5/6;
 	z-index: 1;
 }
 
+.navigation {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #FFFFFF;
+	width: 609px;
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+      
+    margin: 0;
+    padding: 40px 211px 0 211px;
+    
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    transform: translateX(-100%);
+    transition: transform .3s;
+    will-change: transform;
+    /*backface-visibility: hidden;*/
+}
+
+.nav-ul {
+
+}
+
+.nav-list {
+	display: block;
+    text-align: center;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.ham {
+	visibility: visible;
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+    margin-left: -10px;
+    padding: 5px 10px 10px;
+    top: 2px;
+    font-size: 23px;
+
+}
+
+.infa {
+
+	justify-content: center;
+}
+
+.infa2 {
+	display: none;
+}
+
+.green-line img{
+	width: 192px;
+}
+img.right {
+	position: relative;
+	left:80.4%;
+}
+
+
+.tit-main {
+	display: block;
+}
+
+.line-1 img{
+	width: 451px;
+	position: absolute;
+	top: 65px;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+	#image-8 {
+    margin: 25px 47px 86px 47px;
+    display: grid;
+    grid-template-columns: repeat(6, 106.5px);
+    grid-template-rows: repeat(8, 110.2px);
+    grid-gap: 6px;
+
+}
 
 
 }
+}
+
+
+
 
 
 body{
@@ -132,8 +231,11 @@ align-items: center;
 list-style-type: none;
 }
 
-.ham {
+.hum {
 	visibility: hidden;
+	display: flex;
+	justify-content: flex-start;
+	opacity: 1;
 }
 
 .ham {
@@ -174,6 +276,18 @@ list-style-type: none;
   stroke-dashoffset: -138px;
 }
 
+.tit-main {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
 /*заголовки разделов*/
 .H2 {
 	display: flex;
@@ -186,37 +300,112 @@ list-style-type: none;
 /*меню и его элементы*/
 .navigation {
 	max-width: 1440px;
-	display: inline-flex;
+	display: flex;
 	align-items: center;
-
+	height: 120px;
+	
 }
 
 
-.logo img{
+.logo {
+	width: 148px;
+	height: 18px;
 	color: #333333;
-	padding-right: 77px;
-	margin-left: -30px;
+	padding-right: 37px;
+	;
 	text-decoration: line-through;
-
+	margin-left: 47px;
 }
 
-.line-through {
-position: absolute;
-left: 2px;
-top: 2px;
-}
 
 /*список элементов меню*/
 .nav {
-	width: 569px;
+	
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 
 }
 
+
 /*значек лупа*/
-.search {
+.loupe {
+  display: flex;
+  float: right;
+
+}
+
+.container{
+  height: 120px;
+  background: #F9FAFC;
+  text-align: center;
+  line-height: 45px;
+ 
+  transition: all 0.3s ease;
+  position: relative;
+  left: 20%;
+
+}
+
+.input{
+  width: 447px;
+  height: 72px;
+  border: 1px solid #FFFFFF;
+  background: transparent;
+  font-size: 14px;
+  padding: 28px 0 28px 24px;
+  outline: none;
+color: #A1A1A1;
+  transition: all 0.3s ease;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.container .fas{
+  color: #333333;
+  position: absolute;
+  transform: translateY(-50%); 
+  top: 50%;
+  left: 85%;
+  font-size: 20px;
+  cursor: pointer;
+  padding-right: 26px; 
+}
+
+.container:active {
+  width: 495px;
+  	padding: 24px;
+  transition: all 0.3s ease;
+  opacity: 1;
+   background:  #E2FA1D;
+}
+
+
+
+.input:active{
+
+ background: #FFFFFF;
+   opacity: 1;
+  transition: all 0.5s ease;
+}
+
+input:placeholder {
+  color: #fff;
+}
+
+
+
+
+
+
+}
+
+.fa-search {
+	
 	color: #333333;
 	font-size: 27px;
 	padding: 47px;
@@ -233,16 +422,30 @@ justify-content: flex-end;
 	text-transform: uppercase;
 }
 
+.nav li {
+	display: flex;
+	height: 120px;
+	align-items: center;
+	justify-content: center;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+
  /*отступы в меню */
 .nav-list {
 	font-size: 14px;
 	color: #333333;
-	padding-right: 79px;
+	
 }
 
 .nav-list:last-child {
 	padding-right: 0;
 }
+
+.nav-list:hover {
+	background: #E2FA1D;
+}
+
 
 /*раздел Стиль и модная экипировка*/
 .stylesh {
@@ -251,27 +454,33 @@ justify-content: flex-end;
 }
 
 .block1 {
+	max-width: 1440px;
 	margin-top: 64px;
 }
 
 	/*декоративные элементы-зеленые линии*/
-/*.green-line img{
-	position: relative;
+.green-line img{
+	position:absolute;
 	margin-top: 24px;
 
 }
-/*.line-1 {
+.line-1 {
 	width: 450px;
 	height: 448px;
 	position: absolute;
-	top: -78px;
-	left: -121px;
-	border-bottom: 10px solid #E2FA1D;
+	top: 24px;
+	z-index: 0;
+
+
+
+}
+
+.right {
+	position: absolute;
+	left: 85%;
 	transform: rotate(180deg);
 
-}*/
-
-
+}
 
 
 	/*текст-описание после заголовка Н2*/
@@ -296,7 +505,34 @@ justify-content: flex-end;
 	grid-template-columns:repeat(12, 106.5px); 
 	grid-template-rows: repeat(4, 110.2px); 
 	grid-gap: 6px;
+	
 }
+
+.img-small {
+	filter: grayscale(100%);
+	-webkit-filter:grayscale(100%);
+}
+
+.img-small:hover {
+	filter: none;
+	filter: grayscale(0);
+	-webkit-filter:grayscale(0);
+}
+
+
+.img-big {
+	filter: grayscale(100%);
+	-webkit-filter:grayscale(100%);
+}
+
+.img-big:hover {
+	filter: none;
+	filter: grayscale(0);
+	-webkit-filter:grayscale(0);
+}
+
+
+
 
 /*изображение ромб маленькое*/
 .img-small img{
@@ -367,6 +603,7 @@ grid-column: 11/12;
 
 /*раздел об Superdupe*/
 .about {
+	max-width: 1440px;
 	max-height: 1720px;
 	background: #F9FAFC;
 	
@@ -496,6 +733,7 @@ grid-column: 11/12;
 
 /*раздел Отзывы*/
 .feedback {
+	max-width: 1440px;
 	height: 763px;
 	background: #F9FAFC;
 
@@ -519,17 +757,19 @@ grid-column: 11/12;
 }
 
 /*блок переключатель л/пр*/
-.peginator {
+.peginator ul{
 	margin-right: 47px;
 	border: 1px solid #BDBDBD;
 	box-sizing: border-box;
 	border-radius: 5px;
-	justify-content: flex-end;
+	
 }
 
 /*копка блока peginator*/
-.btn {
+ .btn {
+ 	position: relative;
 
+ 	float: right;
 	max-width: 226px;
 	height: 52px;
 }
@@ -628,6 +868,7 @@ grid-column: 11/12;
 
 /*подвал*/
 footer {
+max-width: 1440px;
 display: flex;
 align-items: center;
 background: #E2FA1D;
@@ -635,9 +876,14 @@ height: 120px;
 }
 
 /*иконки*/
-.icons i{
-justify-content: flex-end;
-color: #333333;
+.icons {
+position: relative;
+left: 20%;
+
+}
+
+.fab {
+	color: #333333;
 margin-left: 32px;
 }
 
@@ -650,6 +896,16 @@ top: 2px;*/
 
 .footer img{
 	display: flex;
-	margin-left: 47px;
+
 	
+}
+
+ .nav1 li:hover {
+	background: #F9FAFC;
+}
+
+div.icons i:hover {
+	background: #F9FAFC;
+	color:  #9CB400;
+	padding: 14px;
 }

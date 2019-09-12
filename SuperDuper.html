@@ -6,43 +6,50 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="https://kit.fontawesome.com/176b683234.js"></script>
+	
 
 </head>
 <body>
 	<header class="header">
 		<div class="navigation">
+			
 			<div class="tit-main">
-			<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
-  		 	<path class="line top"
-       	 	d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+				<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+  		 		<path class="line top"
+       	 		d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
 
-     		<path class="line middle"
-       	 	d="m 30,50 h 40" />
+     			<path class="line middle"
+       	 		d="m 30,50 h 40" />
 
-  	 		<path      class="line bottom"
-        	d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-			</svg>
+  	 			<path      class="line bottom"
+        		d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+				</svg>
 			</div>
 
 			<a class="logo" href="#">
-				<img src="img/SuperDuper.svg" alt="SuperDuper">	
-				<svg class="line-through">
-					<line x1="47" y1="58" x2="195" y2="58" stroke="#E2FA1D" stroke-width="4">
-				</svg>
-						
+				<img src="img/Logo-header.png" alt="SuperDuper">		
 			</a>
-			
+		
 
-
-			<ul class="nav">
+			<nav class="nav">
+			<ul class="nav-ul">
 				<a href="#" class="nav-list"><li>Стиль</li></a>
 				<a href="#" class="nav-list"><li>об Superduper</li></a>
 				<a href="#" class="nav-list"><li>Наша команда</li></a>
 				<a href="#" class="nav-list"><li>Отзывы</li></a>
 			</ul>
-			<a class="search" href="">
-				<i class="fas fa-search"></i>
-			</a>
+			</nav> 
+
+			<div class="loupe">
+				<div class="container">
+
+					<input type="text" class="input" placeholder="Поиск">
+					
+						<i class="fas fa-search" aria-hidden="true"></i>
+				</div>
+			</div>
+
+
 		</div>
 	</header>
 
@@ -52,10 +59,11 @@
 			<p class="text-discription">Видео, советы по стилю, тенденции, которые стоит взять на вооружение, и многое другое.</p>
 		</div>	
 
-		<!--<div class="green-line">
+		<div class="green-line">
 			<img src="img/Rectangle.svg">
-			<div class="line-1"></div>
-		</div>-->
+			<div class="line-1"><img src="img/Group.svg"></div>
+			<img class="right" src="img/Rectangle.svg">
+		</div>
 
 		<div class="image-8" id="image-8">
 			<a class="img-small small1" id="small1" href=""><img src="img/image-8.png"></a>
@@ -131,7 +139,7 @@
 			</div>
 		</div>
 			<div class="feed-list">
-				<div class="infa">
+				<div class="infa infa1">
 					<div class="infa-block">
 						<p class="number">001</p>
 						<p class="fio">Иван иванов</p>
@@ -142,7 +150,7 @@
 					</div>
 				</div>
 			
-				<div class="infa">
+				<div class="infa infa2">
 					<div class="infa-block">
 						<p class="number">002</p>
 						<p class="fio">Иван иванов</p>
@@ -159,13 +167,10 @@
 		<div class="navigation">
 			
 			<a class="logo" href="#">
-				<img src="img/SuperDuper.svg" alt="SuperDuper">	
-				<svg class="line-down">
-					<line x1="47" y1="58" x2="195" y2="58" stroke="#FFFFFF" stroke-width="4">
-				</svg>		
+				<img src="img/Logo-footer.png" alt="SuperDuper">	
 			</a>
 		
-			<ul class="nav">
+			<ul class="nav nav1">
 				<a href="#" class="nav-list"><li>Стиль</li></a>
 				<a href="#" class="nav-list"><li>об Superduper</li></a>
 				<a href="#" class="nav-list"><li>Наша команда</li></a>

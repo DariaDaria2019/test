@@ -10,6 +10,13 @@ html {
 
 @media screen and (max-width: 1024px) { 
 
+	body,
+	html {
+		width: 768px;
+		margin: 0;
+		padding: 0;
+	}
+
 img {
 	width: 100%;
 }
@@ -20,8 +27,8 @@ img {
 	grid-template-columns:repeat(6, 106.5px); 
 	grid-template-rows: repeat(8, 110.2px); 
 	grid-gap: 6px;
-	justify-content: center;
-
+	
+width: 768px;
 }
 
 #small1 {
@@ -75,29 +82,41 @@ grid-row: 5/6;
 grid-column: 5/6;
 }
 
+.about svg{
+	display: none;
+}
 
+section.team {
+	height: 808px;
+}
 
-#img-2  img{
-
+.img-2 img{
+ 	
+ 	/*margin-top: 88px;
+ 	margin-left: 67px;*/
 	width: 335px;
 	height: 264px;
 	z-index: 3;
 
 }
 
-/*фото нои*/
-#img-3  img{
 
+.img-3 img{
+	
+	margin-top: 2px;
+	margin-left: 109px;
 	width: 361px;
-	height: 248px;
+height: 248px;
 	z-index: 2;
 }
 
-/*фото одежда*/
-#img-4 img {
 
+.img-4 img{
+	
+	margin-top: 320px;
+	margin-left:-350px;
 	width: 448px;
-	height: 256px;
+height: 256px;
 	z-index: 1;
 }
 
@@ -167,10 +186,16 @@ grid-column: 5/6;
 
 .green-line img{
 	width: 192px;
+	position: absolute;
+	z-index: 0;
 }
-img.right {
+
+  
+  .right{
 	position: relative;
-	left:80.4%;
+	left: 574px;
+
+	
 }
 
 
@@ -181,7 +206,11 @@ img.right {
 .line-1 img{
 	width: 451px;
 	position: absolute;
-	top: 65px;
+	top: 25px;
+}
+
+.H2-left  {
+	width: 455px;
 }
 
 }
@@ -189,7 +218,7 @@ img.right {
 @media screen and (max-width: 768px) {
 
 	#image-8 {
-    margin: 25px 47px 86px 47px;
+ 	margin-right: 47px;
     display: grid;
     grid-template-columns: repeat(6, 106.5px);
     grid-template-rows: repeat(8, 110.2px);
@@ -197,9 +226,44 @@ img.right {
 
 }
 
+.line-1 img{
+	width: 451px;
+	position: absolute;
+	top: px;
+}
+
+ #img-2 {
+ 	
+ 	margin-top: 88px;
+ 	margin-left: 67px;
+	width: 335px;
+	height: 264px;
+	z-index: 3;
 
 }
+
+
+#img-3 {
+	
+	margin-top: 295px;
+	margin-left: -109px;
+	width: 361px;
+height: 248px;
+	z-index: 2;
 }
+
+
+#img-4 {
+	
+	margin-top: 488px;
+	margin-left: -300px;
+	width: 448px;
+height: 256px;
+	z-index: 1;
+}
+
+}
+
 
 
 
@@ -208,7 +272,11 @@ img.right {
 body{
 font-family: 'Roboto', sans-serif;
 background: #FFFFFF;
-} 
+}
+
+p {
+font-family: 'Roboto', sans-serif;	
+}
 
 header {
 max-width: 1440px;
@@ -219,6 +287,7 @@ padding-top: ;
 
 a {
 text-decoration: none;
+font-family: 'Roboto', sans-serif;
 }
 
 ul {
@@ -343,12 +412,12 @@ list-style-type: none;
  
   transition: all 0.3s ease;
   position: relative;
-  left: 20%;
+  
 
 }
 
 .input{
-  width: 447px;
+  width: 440px;
   height: 72px;
   border: 1px solid #FFFFFF;
   background: transparent;
@@ -377,8 +446,8 @@ color: #A1A1A1;
 }
 
 .container:active {
-  width: 495px;
-  	padding: 24px;
+  width: 490px;
+  padding: 24px;
   transition: all 0.3s ease;
   opacity: 1;
    background:  #E2FA1D;
@@ -468,7 +537,8 @@ justify-content: flex-end;
 	width: 450px;
 	height: 448px;
 	position: absolute;
-	top: 24px;
+	top: 212px;
+	transform: rotate(180deg);
 	z-index: 0;
 
 
@@ -477,7 +547,7 @@ justify-content: flex-end;
 
 .right {
 	position: absolute;
-	left: 85%;
+	float: right;
 	transform: rotate(180deg);
 
 }
@@ -613,15 +683,16 @@ grid-column: 11/12;
 
 /*декор линии серые фон*/
 .about svg {
-	max-height: 1720px;
+	width: 1440px;
+	height: 1720px;
 	position: absolute;
-	z-index: 1;
+	z-index: 0;
 }
 
 /*блок с контентом раздела об Superdupe*/
 .block2 {
 	padding-top: 88px;
-	
+	z-index: 1
 }
 
 /* изображения раздела об Superdupe*/
@@ -672,12 +743,21 @@ grid-column: 11/12;
 	height: 728px;
 	background: #E2FA1D;
 
+
 }
+
+.line-2 {
+	width: 628px;
+height: 734.41px;
+	position: absolute;
+	color : #FFFFFF;
+}
+
 
 /* блок с контентом раздела team*/
 .block3 {
 	display: flex;
-
+z-index: 1;
 
 }
 
@@ -695,39 +775,33 @@ grid-column: 11/12;
 
 /*фото девушка*/
  .img-2 {
- 	/*position: relative;
- 	top: 14%;
- 	left: 11%;*/
+ 	
  	justify-content: flex-start;
  	margin-top: 88px;
  	margin-left: 68px;
-	max-width: 447px;
-	max-height: 352px;
+	width: 447px;
+	height: 352px;
 	z-index: 3;
 
 }
 
 /*фото нои*/
 .img-3 {
-	/*position: relative;
-	top:  37%;
-	left: 26.6%;*/
+	
 	margin-top: 256px;
 	margin-left: -223px;
-	max-width: 559px;
-	max-height: 384px;
+	width: 559px;
+	height: 384px;
 	z-index: 2;
 }
 
 /*фото одежда*/
 .img-4 {
-	/*position: relative;
-	top:  21%;
-	left: 50%;*/
+	
 	margin-top: 144px;
 	margin-left: -223px;
-	max-width: 672px;
-	max-height: 384px;
+	width: 672px;
+	height: 384px;
 	z-index: 1;
 }
 
